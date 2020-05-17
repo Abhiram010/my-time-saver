@@ -33,6 +33,46 @@ if (open=="yt"):
         w1=" &sp=EgQIAxAB"
     webbrowser.open_new(a+v+w1)
     
+if (open=="mail"): 
+    a=input("(x)virtual mode or (y) default mail page:")
+    if a=="y":
+     a = "https://mail.google.com/mail/u/0//"
+     webbrowser.open_new(a)
+    if a=="x":
+      a="https://mail.google.com/mail/u/0/"
+     
+      w=input("Do you want preffered content? yes/no : ")
+      if w=="no":
+        webbrowser.open_new(a+v)
+    if w=="yes":
+        w1=input("open only (primary)(starred)(chats)(all)(drafts)(bin)(sent)(settings) : ") 
+    if w1=="primary":
+        w1=" #primary"
+    
+    if w1=="starred":
+          a="https://mail.google.com/mail/u/0/"
+          w1=" &starred"
+    if w1=="chats":
+        a="https://mail.google.com/mail/u/0/"
+        
+        w1="#chats"
+    if w1=="all":
+        a="https://mail.google.com/mail/u/0/"
+        w1="#all"
+    if w1=="drafts":
+          a="https://mail.google.com/mail/u/0/"
+          w1="#drafts"
+    if w1=="bin":
+          a="https://mail.google.com/mail/u/0/"
+          w1="#trash"
 
+
+    if w1=="sent":
+         a="https://mail.google.com/mail/u/0/"
+         w1=" #sent"
+    if w1=="settings":
+         a="https://mail.google.com/mail/u/0/"
+         w1=" #settings/labels"   
+    webbrowser.open_new(a+w1)
     
 
