@@ -1,5 +1,5 @@
 import webbrowser
-print("(youtube- yt) (Gmail-mail) always use small letters only")
+print("use these codes (youtube- yt) (Gmail-mal)")
 
 open=input("enter what you want= ")
 
@@ -17,21 +17,22 @@ if (open=="yt"):
     
     if w=="yes":
      w1=input("filter for: ")
-   
+    w1="&sp=EgQIARAB"
     if w1=="hour":
-      wl="&sp=EgQIARABs"
+   
+       w1=" &sp=EgIIAQ%253D%253D"
     if w1=="month":
    
-      w1=" &sp=EgQIBBAB"
+      w1=" &sp=EgQIBRAB"
     if w1=="year":
     
-      w1="&sp=EgQIBRAB"
+      w1=" &sp=EgQIAxAB"
 
     if w1=="week":
       w1=" &sp=EgQIAxAB"
     if w1=="today":
-       w1=" &sp=EgQIAhAB"
-    if w=="no": 
+    
+     if w=="no":
         webbrowser.open_new(a+v)
     webbrowser.open_new(a+v+w1)
 
