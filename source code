@@ -1,4 +1,5 @@
 import webbrowser
+print('Just wait a second it will open in your default browser sometimes or it may take sometime!!!')
 print("(youtube- yt) (Gmail-mail) always use small letters only")
 
 open=input("enter what you want= ")
@@ -16,7 +17,8 @@ if (open=="yt"):
     w=input(" Do you want to filter ? yes/no: ")
     
     if w=="yes":
-     w1=input("filter for: ")
+      print('Inputs are:: hour,month,year,week,today,no')
+      w1=input("filter for: ")
    
     if w1=="hour":
       wl="&sp=EgQIARABs"
@@ -77,6 +79,7 @@ if (open=="mail"):
          a="https://mail.google.com/mail/u/0/"
          w1=" #settings/labels"   
     webbrowser.open_new(a+w1)
+    print('Opening.....')
     
     
 
